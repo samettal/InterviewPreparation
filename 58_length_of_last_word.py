@@ -16,5 +16,4 @@ def lengthOfLastWord(s: str) -> int:
         if i == 0 and harften_sonra_bosluk_gordum == False:
             return sondan_harf + 1
         
-    
 print(lengthOfLastWord("s"))
