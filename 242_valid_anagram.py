@@ -2,7 +2,7 @@
 # def isAnagram(s: str, t: str) -> bool:
 #     dict1 = dict()
 #     dict2 = dict()
-    
+
 #     for char in s:
 #         if char not in dict1:
 #             dict1[char] = 1
@@ -30,10 +30,11 @@ def isAnagram(s: str, t: str) -> bool:
     for i in range(len(s)):
         hashmapS[s[i]] = hashmapS.get(s[i], 0) + 1
         hashmapT[t[i]] = hashmapT.get(t[i], 0) + 1
-    
+
     for c in hashmapS:
         if hashmapS[c] != hashmapT.get(c, 0):
             return False
     return True
 
-print(isAnagram(s = 'anagram', t = 'managra'))
+
+print(isAnagram(s="anagram", t="managra"))
